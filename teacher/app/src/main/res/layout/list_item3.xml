@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/half_margin"
+    android:layout_marginTop="@dimen/small_margin"
+    android:layout_marginBottom="@dimen/small_margin"
+    android:layout_marginRight="@dimen/half_margin"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/project_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:gravity="center"
+            android:textSize="40dp"/>
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="小组成员"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"/>
+
+        // 第一个人
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <ImageView
+                android:id="@+id/person1_img"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/half_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginRight="@dimen/half_margin"
+                android:layout_weight="0.99"
+                android:src="@drawable/student"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7">
+
+                <TextView
+                    android:id="@+id/person1_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="任务完成情况"/>
+
+                <ProgressBar
+                    android:id="@+id/process1_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:max="100"
+                    android:progress="0"/>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/send_message_button1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="发消息"/>
+
+                    <Button
+                        android:id="@+id/edit_mission_button1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="编辑任务"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        // 第二个人
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <ImageView
+                android:id="@+id/person2_img"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/half_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginRight="@dimen/half_margin"
+                android:layout_weight="0.99"
+                android:src="@drawable/student"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7">
+
+                <TextView
+                    android:id="@+id/person2_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="任务完成情况"/>
+
+                <ProgressBar
+                    android:id="@+id/process2_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:max="100"
+                    android:progress="0"/>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/send_message_button2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="发消息"/>
+
+                    <Button
+                        android:id="@+id/edit_mission_button2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="编辑任务"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        // 第三个人
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <ImageView
+                android:id="@+id/person3_img"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/half_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginRight="@dimen/half_margin"
+                android:layout_weight="0.99"
+                android:src="@drawable/student"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7">
+
+                <TextView
+                    android:id="@+id/person3_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="任务完成情况"/>
+
+                <ProgressBar
+                    android:id="@+id/process3_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:max="100"
+                    android:progress="0"/>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/send_message_button3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="发消息"/>
+
+                    <Button
+                        android:id="@+id/edit_mission_button3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="编辑任务"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        // 指导老师
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <ImageView
+                android:id="@+id/person4_img"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/half_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginRight="@dimen/half_margin"
+                android:layout_weight="0.99"
+                android:src="@drawable/teacher"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7">
+
+                <TextView
+                    android:id="@+id/person4_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/teacher_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目完成情况"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <ProgressBar
+            android:id="@+id/process4_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:progress="0"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

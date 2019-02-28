@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Signup</string>
+    <string name="Account">Username</string>
+    <string name="Password">Password</string>
+    <string name="repassword">Confirm Password</string>
+    <string name="signup">Signup</string>
+    <string name="blur_me">Blur me please!</string>
+    <string name="description_text">Some Long Description Text\nSome Long Description Text</string>
+    <string name="register_label_nickname">用户名</string>
+    <string name="register_label_password">密码</string>
+    <string name="register_label_re_password">确认密码</string>
+    <string name="register_label_edit_head">编辑头像</string>
+    <string name="register_label_register">注册</string>
+    <string name="login_label_username">用户名</string>
+    <string name="login_label_password">密码</string>
+    <string name="login_label_login">登录</string>
+    <string name="login_label_regist">注册</string>
+    <string name="refresh">刷新</string>
+</resources>
